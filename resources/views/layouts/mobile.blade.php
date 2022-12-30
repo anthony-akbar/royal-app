@@ -16,9 +16,6 @@
     <link rel="apple-touch-icon" href="{{ asset('/logo-combo.png') }}">
 </head>
 <body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
-<div id="preloader">
-    <div class="spinner-border color-highlight" role="status"></div>
-</div>
 <div id="page" data-swup="0">
     <div class="header-bar header-fixed header-app header-auto-show">
         <a href="#" data-back-button><i class="bi bi-chevron-left font-13"></i></a>

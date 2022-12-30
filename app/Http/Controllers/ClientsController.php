@@ -11,4 +11,19 @@ class ClientsController extends Controller
         $clients = Client::all();
         return view('mobile.clients.index', compact('clients'));
     }
+
+    public function show($id) {
+        $client = Client::find($id);
+        return view('mobile.clients.show', compact('client'));
+    }
+
+    public function store(){
+        $data = request()->validate([
+            'name'=>'string',
+            'phone_number'=> 'string',
+            'address'=>'string'
+            ]);
+        Client::create($data);
+        return redirect('clients');
+    }
 }

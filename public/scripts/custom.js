@@ -567,7 +567,7 @@ document[_0x6cbb[33]](_0x6cbb[5], () => {
                 } else {
                     _0xebf0xe[_0x6cbb[54]]();
                     _0xebf0xe[_0x6cbb[84]]();
-                    qrFunction(_0xebf0xe)
+                    console.log(_0xebf0xe)
                 }
                 ;_0xebf0x7d[_0x6cbb[4]][_0x6cbb[3]](_0x6cbb[206])
             }, false)
