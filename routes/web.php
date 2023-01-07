@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ClientsController;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\SalesController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -14,4 +15,7 @@ Route::group(['prefix'=>'clients'], function () {
 });
 Route::group(['prefix'=>'products'], function () {
    Route::get('/', [ProductsController::class, 'index'])->name('products');
+});
+Route::group(['prefix'=>'sales'], function () {
+   Route::get('/', [SalesController::class, 'index'])->name('sales');
 });

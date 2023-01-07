@@ -20,17 +20,17 @@
     <div class="notch-clear"></div>
     <div class="pt-5 mt-4"></div>
     <div class="card card-style overflow-visible mt-5">
-        <div class="mt-n5"></div>
-        <img src="{{ asset('/images/avatars/2s.png') }}" alt="img" width="180"
-             class="mx-auto rounded-circle mt-n5 shadow-l">
+        <div class="mt-5"></div>
         <h1 class="color-theme text-center font-30 pt-3 mb-0">{{ $client->name }}</h1>
         <p class="text-center font-11">{{ $client->address }}</p>
         <div class="content mt-0 mb-2">
             <div class="list-group list-custom list-group-flush list-group-m rounded-xs">
                 <a href="#" class="list-group-item" data-bs-toggle="offcanvas" data-bs-target="#menu-information">
                     <i class="bi bi-person-circle"></i>
-                    <div>Information</div>
-                    <i class="bi bi-chevron-right"></i>
+                    <div class="d-flex">
+                        <div class="align-self-center me-auto">Phone Number</div>
+                        <div class="align-self-center ms-auto">{{ $client->phone_number }}</div>
+                    </div>
                 </a>
                 <a href="page-activity.html" class="list-group-item">
                     <i class="bi bi-bell-fill"></i>
